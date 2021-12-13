@@ -70,9 +70,9 @@
         const clickedElm = event.target;
         if(clickedElm.tagName == 'INPUT' && clickedElm.name == 'filter' && clickedElm.type == 'checkbox'){
           if(clickedElm.checked){
-            filters.push(clicked.value);
+            filters.push(clickedElm.value);
           }else{
-            const valueIndexof = filters.indexOf(clicked.value);
+            const valueIndexof = filters.indexOf(clickedElm.value);
             filters.splice(valueIndexof, 1);
           }
         }
